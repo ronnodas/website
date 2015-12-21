@@ -1,0 +1,189 @@
+.card {
+    display: block;
+    float: left;
+    margin: auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+.footer {
+    clear: both;
+    color: #999;
+    height: 40px;
+    margin-top: -40px;
+    text-align: center;
+    width: 100%;
+    z-index: 100
+}
+.footer a {
+    color: #999
+}
+.hidden {
+    color: #646464;
+    font-size: 13px;
+    text-align: center;
+    visibility: hidden
+}
+.icon-column {
+    width: 50px;
+    text-align: center;
+    font-size: 18px
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+}
+.main {
+    overflow: auto;
+    padding-bottom: 40px;
+    z-index: -100
+}
+.puzzle-table {
+    border-collapse: collapse;
+    width: auto
+}
+.puzzle-table td {
+    padding: 4px 6px
+}
+.puzzlecontent {
+    width: 750px
+}
+.shower:hover .hidden {
+    visibility: visible
+}
+.sprite {
+    background: url(sprite.png) no-repeat top left
+}
+.sprite-address {
+    background-position: 0 0;
+    height: 12px;
+    width: 12px
+}
+.sprite-email {
+    background-position: -24px 0;
+    height: 9px;
+    width: 12px
+}
+.sprite-phone {
+    background-position: -48px 0;
+    height: 12px;
+    width: 12px
+}
+.table-hover tr:hover {
+    background-color: #efefef
+}
+.wrap {
+    margin: auto;
+    max-width: 800px;
+    min-height: 100%;
+    width: 100%
+}
+.years {
+    vertical-align: text-top;
+    width: 96px
+}
+a {
+    border-bottom: 1px dotted #999;
+    color: #646464;
+    text-decoration: none
+}
+a:hover,
+a:focus {
+    border-bottom: 1px dashed #646464;
+    color: #666;
+    outline: none
+}
+body {
+    background-color: #fafafa;
+    color: #646464;
+    font: 15px/20px Cabin, Helvetica, Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+form {
+    height: auto;
+    margin: auto;
+    padding: 20px 10px 5px
+}
+h1 {
+    color: #2e6dd1;
+    font: normal 70px Ubuntu, Helvetica, sans-serif;
+    line-height: .9em;
+    margin: 0;
+    padding: 30px 0 10px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff
+}
+h2 {
+    border-bottom: 2px solid #ccc;
+    color: #2e6dd1;
+    font: 22px Ubuntu, Helvetica, sans-serif;
+    height: auto;
+    margin-bottom: 3px;
+    padding: 6px 0
+}
+h3 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    height: auto;
+    margin: 5px 0 2px
+}
+html {
+    height: 100%
+}
+input {
+    border: 1px solid #999
+}
+p {
+    height: auto;
+    margin: auto;
+    padding: 0 10px 5px
+}
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+table tr {
+    border-bottom: 1px solid #ddd
+}
+table tr:last-child {
+    border-bottom: none
+}
+td {
+    padding: 5px 0
+}
+td .sprite {
+    margin: auto
+}
+ul {
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
+    list-style: none;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none
+}
+@media(min-width: 801px) {
+    .right {
+        border-left: 1px solid #ddd;
+        padding: 0 18px;
+        float: right;
+        width: 32%
+    }
+    .left {
+        padding: 0 10px;
+        width: 60%;
+        float: left
+    }
+}
+@media(max-width: 800px) {
+    .right, .left {
+        padding: 10px;
+        float: left;
+        display: block;
+        margin: auto;
+        width: calc(100% - 20px)
+    }
+}

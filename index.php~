@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Homepage of Ronno Das" /> 
+    <meta name="author" content="Ronno Das" />
+    <link href='http://fonts.googleapis.com/css?family=Allura|Cabin'
+          rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="this-is-me.css" media="screen" />
+    <title>Ronno Das</title>
+    <link rel="icon" type="image/gif" href="img/icons/about.png"/>
+  </head> 
+
+  <body>
+    <div id="mainwrap">
+      <div id="cardstyle">
+        <?php include 'menu.html'; ?>
+		<div id="content" class="shower">
+          <ul class="cards">
+            <li id="hello" class="card">
+			  <h1>Ronno Das</h1>
+			  <p class="tagline">says hello...</p>
+			  <div class="hidden">
+                <p class="tagline"> Also, this page is under construction. Venture at your own risk. </p> 
+			  </div>
+            </li>
+
+            <li id="bio" class="card">
+			  <h2>About Me...</h2> 
+			  <!-- <img class="left"
+				   src="img/photo.jpg" alt="This is a sample
+				   photo..." /> -->
+			  <p>I'm well known for groan inducing puns and rectangular hyperbole.</p>
+			  <p>My name means 'easily accessible' in a dead language called Sanskrit.
+                Or at least that's what I've been told. I'd be grateful if someone
+                can actually confirm this. </p>
+			  <p>At some point, I'm going to put up a photo here. 
+                Until then, try to be satisfied with this text.</p>
+
+            </li>
+
+            <li id="stuff" class="card">
+			  <h2>Stuff I like</h2> 
+			  <ul>
+				<!-- <li><a href="img/portfolio/sample1.jpg"> -->
+                <!--     <img src="img/portfolio/sample1_thumbnail.jpg" -->
+                <!--          title="Sample photo #1" alt="" /></a></li>  -->
+
+			  </ul> <p class="portfoliomore"><a
+												href="#portfolio2">Next page</a></p>
+            </li>
+
+
+            <li id="social" class="card">
+			  <h2>Social networks</h2> <ul>
+                <li><a href="https://plus.google.com/+RonnoDas" 
+					   class="external">
+                    <img src="img/icons/google+.png" alt="Google+" />
+                    <strong>plus.google.com</strong>/+RonnoDas</a></li>
+                <li><a href="http://www.stumbleupon.com/stumbler/ronnodas" 
+					   class="external">
+                    <img src="img/icons/stumbleupon.png" alt="StumbleUpon" />
+                    <strong>stumbleupon.com</strong>/stumbler/ronnodas</a></li>
+                <li><a href="http://math.stackexchange.com/users/32766/ronno" class="external">
+                    <img src="img/icons/mathse.png" alt="Math StackExchange" />
+                    <strong>math.stackexchange.com</strong>/users/32766/ronno</a></li>
+                <li><a href="http://projecteuler.net/progress=ronno" class="external">
+                    <img src="img/icons/euler.png" alt="Project Euler" />
+                    <strong>projecteuler.net</strong>/progress=ronno</a></li>
+                <li><a href="http://steamcommunity.com/profiles/76561198011599121"
+					   class="external">
+                    <img src="img/icons/steam.png" alt="Steam" /> 
+                    <strong>steamcommunity.com</strong>/profiles/76561198011599121</a></li>
+                <li><a href="http://www.last.fm/user/ronnodas"
+					   class="external">
+                    <img src="img/icons/lastfm.png" alt="Last.fm" /> 
+                    <strong>last.fm</strong>/user/ronnodas</a></li>
+			  </ul>
+            </li>
+
+            <li id="puzzle" class="card">
+			  <h2>Online Treasure Hunt</h2> 
+			  <p> I made this for my college Tech Fest in 2012. Have fun. 
+                Make sure you have javascript enabled.</p>
+			  <p> <a href="oth/start.php" > Click here to start. </a> </p> 
+            </li>
+
+            <li id="contact" class="card">
+			  <h2>Contact</h2> 
+			  <div id="address">
+                <h3>Ronno Das</h3> 
+                <p>Chennai Mathematical Institute,<br/>
+				  H1 SIPCOT IT Park,<br/>
+				  Siruseri 603103, India</p>
+                <p>Telephone: +91 95662 40953<br/>
+				  E-mail: <a href="mailto:ronno@cmi.ac.in">ronno@cmi.ac.in</a>
+                </p>
+			  </div> <div id="map">
+                <img alt="Where I am" src="http://maps.googleapis.com/maps/api/staticmap?center=12.829879,80.217934&amp;zoom=9&amp;size=305x200&amp;sensor=false&amp;markers=color:red%7C12.829879,80.217934" />
+			  </div> 
+			</li> 
+		  </ul> 
+		</div> 
+	  </div> 
+	</div>
+    <div class ="push"></div>
+	<div id="footer" class="shower">
+	  <div class="hidden">
+		© 2013 Ronno Das &middot; <a href="http://andreasviklund.com/templates/this-is-me/">Template
+		  design</a> by <a href="http://andreasviklund.com/">andreasviklund.com</a>
+		<br/>
+		By reading this fine print, you surrender your soul and all earthly properties to the flying spaghetti monster.
+	  </div>
+	</div>
+  </body>
+</html>
