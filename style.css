@@ -5,10 +5,13 @@
     padding: 10px;
     width: calc(100% - 20px);
 }
+
 .footer {
     clear: both;
     color: #999;
+    font-size: 13px;
     height: 40px;
+    margin-bottom: 5px;
     margin-top: -40px;
     text-align: center;
     width: 100%;
@@ -18,20 +21,19 @@
     color: #999
 }
 .hidden {
-    color: #646464;
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
     visibility: hidden
 }
 .icon-column {
-    width: 50px;
+    font-size: 18px;
     text-align: center;
-    font-size: 18px
+    width: 50px;
 }
 .icon {
-    width: 16px;
     height: 16px;
     opacity: 0.8;
+    width: 16px;
 }
 .main {
     overflow: auto;
@@ -121,6 +123,7 @@ h2 {
     font: 22px Ubuntu, Helvetica, sans-serif;
     height: auto;
     margin-bottom: 3px;
+    margin-top: 2px;
     padding: 6px 0
 }
 h3 {
@@ -158,32 +161,32 @@ td .sprite {
     margin: auto
 }
 ul {
-    -moz-padding-start: 0;
-    -webkit-padding-start: 0;
     list-style: none;
     list-style-image: none;
     list-style-position: outside;
-    list-style-type: none
+    list-style-type: none;
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
 }
 @media(min-width: 801px) {
     .right {
         border-left: 1px solid #ddd;
-        padding: 0 18px;
         float: right;
-        width: 32%
+        padding-left: 15px;
+        width: 33%
     }
     .left {
-        padding: 0 10px;
-        width: 60%;
-        float: left
+        float: left;
+        padding-right: 15px;
+        width: 63%;
     }
 }
 @media(max-width: 800px) {
-    .right, .left {
-        padding: 10px;
-        float: left;
+    .left, .right {
         display: block;
-        margin: auto;
-        width: calc(100% - 20px)
+        float: left;
+        margin: 0;
+        
+        width: 100%
     }
 }
