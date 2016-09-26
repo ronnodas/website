@@ -6,9 +6,27 @@
     width: calc(100% - 20px);
 }
 
+.left {
+    padding-left: 10px;
+}
+
+.right {
+    padding-right: 10px;
+}
+
+.card,
+.left,
+.right {
+    background: snow;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
 .footer {
     clear: both;
-    color: #999;
+    color: maroon;
     font-size: 13px;
     height: 40px;
     margin-bottom: 5px;
@@ -16,9 +34,6 @@
     text-align: center;
     width: 100%;
     z-index: 100
-}
-.footer a {
-    color: #999
 }
 .hidden {
     font-size: 10px;
@@ -38,45 +53,19 @@
 .main {
     overflow: auto;
     padding-bottom: 40px;
-    z-index: -100
-}
-.puzzle-table {
-    border-collapse: collapse;
-    width: auto
-}
-.puzzle-table td {
-    padding: 4px 6px
-}
-.puzzlecontent {
-    width: 750px
 }
 .shower:hover .hidden {
     visibility: visible
 }
-.sprite {
-    background: url(sprite.png) no-repeat top left
-}
-.sprite-address {
-    background-position: 0 0;
-    height: 12px;
-    width: 12px
-}
-.sprite-email {
-    background-position: -24px 0;
-    height: 9px;
-    width: 12px
-}
-.sprite-phone {
-    background-position: -48px 0;
-    height: 12px;
-    width: 12px
+.table-hover tr{
+    border-radius: 10px;
 }
 .table-hover tr:hover {
-    background-color: #efefef
+    background-color: gainsboro;
 }
 .wrap {
     margin: auto;
-    max-width: 800px;
+    max-width: 900px;
     min-height: calc(100% - 40px);
     width: 100%
 }
@@ -86,17 +75,16 @@
 }
 a {
     border-bottom: 1px dotted #999;
-    color: #646464;
+    color: inherit;
     text-decoration: none
 }
 a:hover,
 a:focus {
-    border-bottom: 1px dashed #646464;
-    color: #666;
+    border-bottom: 1px dashed #999;
     outline: none
 }
 body {
-    background-color: #fafafa;
+    background-color: #cecece;
     color: #646464;
     font: 15px/20px Cabin, Helvetica, Arial, sans-serif;
     height: 100%;
@@ -108,18 +96,22 @@ form {
     margin: auto;
     padding: 20px 10px 5px
 }
+.head {
+    color: #cecece;
+        margin-bottom: 10px;
+}
 h1 {
-    color: #2e6dd1;
+    color: snow;
     font: normal 70px Ubuntu, Helvetica, sans-serif;
     line-height: .9em;
     margin: 0;
     padding: 30px 0 10px;
     text-align: center;
-    text-shadow: 0 1px 0 #fff
+    text-shadow: 0 0 2px #055
 }
 h2 {
     border-bottom: 2px solid #ccc;
-    color: #2e6dd1;
+    color: maroon;
     font: 22px Ubuntu, Helvetica, sans-serif;
     height: auto;
     margin-bottom: 3px;
@@ -155,7 +147,7 @@ table tr:last-child {
     border-bottom: none
 }
 td {
-    padding: 5px 0
+    padding: 5px;
 }
 td .sprite {
     margin: auto
@@ -168,25 +160,38 @@ ul {
     -moz-padding-start: 0;
     -webkit-padding-start: 0;
 }
-@media(min-width: 801px) {
+@media(min-width: 901px) {
     .right {
         border-left: 1px solid #ddd;
         float: right;
         padding-left: 15px;
-        width: 33%
+        width: calc(33% - 20px)
     }
     .left {
         float: left;
         padding-right: 15px;
-        width: 63%;
+        width: calc(67% - 40px);
     }
 }
-@media(max-width: 800px) {
-    .left, .right {
+@media(max-width: 900px) {
+    .left,
+    .right {
         display: block;
         float: left;
-        margin: 0;
-        
-        width: 100%
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+}
+.top {
+    height: 300px;
+    background: maroon;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+@media(max-width: 350px) {
+    .top {
+        height: 400px
     }
 }
