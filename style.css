@@ -3,12 +3,45 @@
     float: left;
     margin: auto;
     padding: 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
+}
+
+.left {
+    padding-left: 10px;
+}
+
+.right {
+    padding-right: 10px;
+}
+
+.card,
+.left,
+.right {
+    background: snow;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    padding: 10px 15px 13px;
+    border-radius: 3px;
+}
+
+.left.portrait {
+    background: none;
+    box-shadow: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.portrait img {
+    margin: auto;
+    display: block;
+    border: 10px solid snow;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
     clear: both;
-    color: #999;
+    color: midnightblue;
     font-size: 13px;
     height: 40px;
     margin-bottom: 5px;
@@ -16,9 +49,6 @@
     text-align: center;
     width: 100%;
     z-index: 100
-}
-.footer a {
-    color: #999
 }
 .hidden {
     font-size: 10px;
@@ -32,52 +62,26 @@
 }
 .icon {
     height: 16px;
-    opacity: 0.8;
+    opacity: 0.5;
     width: 16px;
 }
 .main {
     overflow: auto;
     padding-bottom: 40px;
-    z-index: -100
-}
-.puzzle-table {
-    border-collapse: collapse;
-    width: auto
-}
-.puzzle-table td {
-    padding: 4px 6px
-}
-.puzzlecontent {
-    width: 750px
 }
 .shower:hover .hidden {
     visibility: visible
 }
-.sprite {
-    background: url(sprite.png) no-repeat top left
-}
-.sprite-address {
-    background-position: 0 0;
-    height: 12px;
-    width: 12px
-}
-.sprite-email {
-    background-position: -24px 0;
-    height: 9px;
-    width: 12px
-}
-.sprite-phone {
-    background-position: -48px 0;
-    height: 12px;
-    width: 12px
-}
 .table-hover tr:hover {
-    background-color: #efefef
+    background-color: gainsboro;
+}
+.table-hover tr:hover .icon {
+    opacity: 1
 }
 .wrap {
     margin: auto;
-    max-width: 800px;
-    min-height: calc(100% - 40px);
+    max-width: 900px;
+    min-height: calc(100% - 50px);
     width: 100%
 }
 .years {
@@ -86,17 +90,16 @@
 }
 a {
     border-bottom: 1px dotted #999;
-    color: #646464;
+    color: inherit;
     text-decoration: none
 }
 a:hover,
 a:focus {
-    border-bottom: 1px dashed #646464;
-    color: #666;
+    border-bottom: 1px dashed #999;
     outline: none
 }
 body {
-    background-color: #fafafa;
+    background-color: #cecece;
     color: #646464;
     font: 15px/20px Cabin, Helvetica, Arial, sans-serif;
     height: 100%;
@@ -108,21 +111,26 @@ form {
     margin: auto;
     padding: 20px 10px 5px
 }
+.head {
+    color: #cecece;
+    margin-bottom: 10px;
+    background: midnightblue;
+}
 h1 {
-    color: #2e6dd1;
+    color: snow;
     font: normal 70px Ubuntu, Helvetica, sans-serif;
     line-height: .9em;
     margin: 0;
     padding: 30px 0 10px;
     text-align: center;
-    text-shadow: 0 1px 0 #fff
+    text-shadow: 0 0 2px #055
 }
 h2 {
     border-bottom: 2px solid #ccc;
-    color: #2e6dd1;
+    color: midnightblue;
     font: 22px Ubuntu, Helvetica, sans-serif;
     height: auto;
-    margin-bottom: 3px;
+    margin-bottom: 12px;
     margin-top: 2px;
     padding: 6px 0
 }
@@ -155,7 +163,7 @@ table tr:last-child {
     border-bottom: none
 }
 td {
-    padding: 5px 0
+    padding: 5px;
 }
 td .sprite {
     margin: auto
@@ -165,28 +173,49 @@ ul {
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
+    margin: 0;
     -moz-padding-start: 0;
     -webkit-padding-start: 0;
 }
-@media(min-width: 801px) {
+@media(min-width: 900px) {
     .right {
         border-left: 1px solid #ddd;
         float: right;
         padding-left: 15px;
-        width: 33%
+        width: calc(33% - 25px)
     }
     .left {
         float: left;
         padding-right: 15px;
-        width: 63%;
+        width: calc(67% - 50px);
+    }
+    .portrait img {
+        height: 239px;
     }
 }
-@media(max-width: 800px) {
-    .left, .right {
-        display: block;
-        float: left;
-        margin: 0;
-        
-        width: 100%
+@media(max-width: 899px) {
+    .left,
+    .right {
+        width: 100%;
+        padding: 10px;
+    }
+    .left.portrait {
+        padding: 0;
+    }
+    .portrait img {
+        width: calc(100% - 50px);
+    }
+}
+.top {
+    height: 340px;
+    background: midnightblue;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+@media(max-width: 350px) {
+    .top {
+        height: 400px
     }
 }
