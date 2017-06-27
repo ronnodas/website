@@ -3,7 +3,7 @@
     float: left;
     margin: auto;
     padding: 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
 }
 
 .left {
@@ -20,8 +20,23 @@
     background: snow;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
-    padding: 10px 10px 13px;
-    border-radius: 2px;
+    padding: 10px 15px 13px;
+    border-radius: 3px;
+}
+
+.left.portrait {
+    background: none;
+    box-shadow: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.portrait img {
+    margin: auto;
+    display: block;
+    border: 10px solid snow;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -66,7 +81,7 @@
 .wrap {
     margin: auto;
     max-width: 900px;
-    min-height: calc(100% - 40px);
+    min-height: calc(100% - 50px);
     width: 100%
 }
 .years {
@@ -98,7 +113,8 @@ form {
 }
 .head {
     color: #cecece;
-        margin-bottom: 10px;
+    margin-bottom: 10px;
+    background: maroon;
 }
 h1 {
     color: snow;
@@ -161,26 +177,33 @@ ul {
     -moz-padding-start: 0;
     -webkit-padding-start: 0;
 }
-@media(min-width: 901px) {
+@media(min-width: 900px) {
     .right {
         border-left: 1px solid #ddd;
         float: right;
         padding-left: 15px;
-        width: calc(33% - 20px)
+        width: calc(33% - 25px)
     }
     .left {
         float: left;
         padding-right: 15px;
-        width: calc(67% - 40px);
+        width: calc(67% - 50px);
+    }
+    .portrait img {
+        height: 239px;
     }
 }
-@media(max-width: 900px) {
+@media(max-width: 899px) {
     .left,
     .right {
-        display: block;
-        float: left;
+        width: 100%;
         padding: 10px;
-        width: calc(100% - 20px);
+    }
+    .left.portrait {
+        padding: 0;
+    }
+    .portrait img {
+        width: calc(100% - 50px);
     }
 }
 .top {
