@@ -6,6 +6,12 @@
     width: calc(100% - 30px);
 }
 
+#topcard {
+  padding-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .left {
     padding-left: 10px;
 }
@@ -37,6 +43,10 @@
     border: 10px solid snow;
     border-radius: 3px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  max-width: 100%;
 }
 
 .footer {
@@ -207,7 +217,7 @@ ul {
     }
 }
 .top {
-    height: 340px;
+    height: 800px;
     background: maroon;
     position: absolute;
     width: 100%;
