@@ -206,7 +206,7 @@ ul {
 @media(max-width: 899px) {
     .left,
     .right {
-        width: 100%;
+        width: calc(100% - 20px);
         padding: 10px;
     }
     .left.portrait {
