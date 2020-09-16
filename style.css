@@ -82,9 +82,6 @@ img {
 .shower:hover .hidden {
     visibility: visible
 }
-.table-hover tr:hover {
-    background-color: gainsboro;
-}
 .table-hover tr:hover .icon {
     opacity: 1
 }
