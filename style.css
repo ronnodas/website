@@ -61,7 +61,7 @@ img {
     z-index: 100
 }
 .hidden {
-    font-size: 10px;
+    font-size: 3px;
     text-align: center;
     visibility: hidden
 }
