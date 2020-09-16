@@ -82,9 +82,6 @@ img {
 .shower:hover .hidden {
     visibility: visible
 }
-.table-hover tr:hover .icon {
-    opacity: 1
-}
 .wrap {
     margin: auto;
     max-width: 900px;
@@ -225,4 +222,17 @@ ul {
     .top {
         height: 400px
     }
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.links {
+  color: snow;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 25px;
+  word-spacing: 1em;
 }
