@@ -1,47 +1,89 @@
-.card {
-    display: block;
-    float: left;
-    margin: auto;
-    padding: 10px;
-    width: calc(100% - 30px);
+:root {
+  --main-theme-color: midnightblue;
+  --main-text-color: #646464;
+  --main-light-color: #dedede;
+  --main-light-accent-color: snow;
 }
 
-.left {
-    padding-left: 10px;
+
+body {
+    background-color: var(--main-light-color);
+    color: var(--main-text-color);
+    font: 15px/20px Cabin, Helvetica, Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0
 }
 
-.right {
-    padding-right: 10px;
+.topshading {
+    background: var(--main-theme-color);
+    height: 900px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr minmax(200px, 1fr);
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-gap: 15px;
+  grid-auto-flow: row;
+  padding-bottom: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.head {
+    grid-column: 1 / span 2;
+    color: var(--main-light-color);
+    font-size: 110%;
+}
+
+.subtitle {
+  text-align: center;
+}
+.links {
+  color: var(--main-light-accent-color);
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 25px;
+  word-spacing: 1em;
 }
 
 .card,
 .left,
 .right {
-    background: snow;
+    background-color: var(--main-light-accent-color);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
     padding: 10px 15px 13px;
     border-radius: 3px;
 }
 
-.left.portrait {
-    background: none;
-    box-shadow: none;
-    padding-top: 0;
-    padding-bottom: 0;
+.card {
+    grid-column: 1 / span 2;
 }
 
-.portrait img {
-    margin: auto;
-    display: block;
-    border: 10px solid snow;
-    border-radius: 3px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.3);
+@media(min-width: 500px) {
+    .left {
+      grid-column: 1 / span 1;
+    }
+
+    .right {
+      grid-column: 2 / span 1;
+    }
+}
+@media(max-width: 499px) {
+    .left,
+    .right {
+        grid-column: 1 / span 2;
+    }
 }
 
 .footer {
     clear: both;
-    color: midnightblue;
+    color: var(--main-theme-color);
     font-size: 13px;
     height: 40px;
     margin-bottom: 5px;
@@ -50,114 +92,67 @@
     width: 100%;
     z-index: 100
 }
-.hidden {
-    font-size: 10px;
-    text-align: center;
-    visibility: hidden
-}
-.icon-column {
-    font-size: 18px;
-    text-align: center;
-    width: 50px;
-}
-.icon {
-    height: 16px;
-    opacity: 0.5;
-    width: 16px;
-}
-.main {
-    overflow: auto;
-    padding-bottom: 40px;
-}
-.shower:hover .hidden {
-    visibility: visible
-}
-.table-hover tr:hover {
-    background-color: gainsboro;
-}
-.table-hover tr:hover .icon {
-    opacity: 1
-}
-.wrap {
-    margin: auto;
-    max-width: 900px;
-    min-height: calc(100% - 50px);
-    width: 100%
-}
-.years {
-    vertical-align: text-top;
-    width: 96px
-}
-a {
-    border-bottom: 1px dotted #999;
-    color: inherit;
-    text-decoration: none
-}
-a:hover,
-a:focus {
-    border-bottom: 1px dashed #999;
-    outline: none
-}
-body {
-    background-color: #cecece;
-    color: #646464;
-    font: 15px/20px Cabin, Helvetica, Arial, sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0
-}
-form {
-    height: auto;
-    margin: auto;
-    padding: 20px 10px 5px
-}
-.head {
-    color: #cecece;
-    margin-bottom: 10px;
-    background: midnightblue;
-}
+
+
 h1 {
-    color: snow;
+    color: var(--main-light-accent-color);
     font: normal 70px Ubuntu, Helvetica, sans-serif;
-    line-height: .9em;
     margin: 0;
-    padding: 30px 0 10px;
+    padding-top: 10px;
     text-align: center;
-    text-shadow: 0 0 2px #055
 }
 h2 {
-    border-bottom: 2px solid #ccc;
-    color: midnightblue;
+    border-bottom: 2px solid var(--main-light-color);
+    color: var(--main-theme-color);
     font: 22px Ubuntu, Helvetica, sans-serif;
     height: auto;
     margin-bottom: 12px;
-    margin-top: 2px;
+    margin-top: 0px;
     padding: 6px 0
 }
 h3 {
-    color: #333;
+    color: black;
+    background-color: inherit;
     font-size: 16px;
     font-weight: 700;
     height: auto;
     margin: 5px 0 2px
 }
-html {
-    height: 100%
-}
-input {
-    border: 1px solid #999
-}
+
 p {
     height: auto;
     margin: auto;
     padding: 0 10px 5px
 }
+
+a {
+    border-bottom: 1px dotted;
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none
+}
+a:hover,
+a:focus {
+    border-bottom: 1px dashed;
+    outline: none
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 table {
     border-collapse: collapse;
     width: 100%
 }
 table tr {
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid var(--main-light-color)
 }
 table tr:last-child {
     border-bottom: none
@@ -165,57 +160,25 @@ table tr:last-child {
 td {
     padding: 5px;
 }
-td .sprite {
-    margin: auto
+
+.icon {
+    font-size: 18px;
+    text-align: center;
+    width: 50px;
 }
-ul {
-    list-style: none;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    margin: 0;
-    -moz-padding-start: 0;
-    -webkit-padding-start: 0;
-}
-@media(min-width: 900px) {
-    .right {
-        border-left: 1px solid #ddd;
-        float: right;
-        padding-left: 15px;
-        width: calc(33% - 25px)
-    }
-    .left {
-        float: left;
-        padding-right: 15px;
-        width: calc(67% - 50px);
-    }
-    .portrait img {
-        height: 239px;
-    }
-}
-@media(max-width: 899px) {
-    .left,
-    .right {
-        width: 100%;
-        padding: 10px;
-    }
-    .left.portrait {
-        padding: 0;
-    }
-    .portrait img {
-        width: calc(100% - 50px);
-    }
-}
-.top {
-    height: 340px;
-    background: midnightblue;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
+.icon img {
+    height: 16px;
+    opacity: 0.5;
+    width: 16px;
 }
 
-@media(max-width: 350px) {
-    .top {
-        height: 400px
-    }
+.years {
+    vertical-align: text-top;
+    width: 96px
+}
+
+#topcard {
+  padding-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
