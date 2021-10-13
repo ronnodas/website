@@ -51,9 +51,8 @@ body {
 #menu ul {
     color: var(--main-light-accent-color);
     font-size: 22px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    line-height: 25px;
+    margin: 15px;
+    line-height: 28px;
     word-spacing: 1em;
 }
 
@@ -137,6 +136,12 @@ h3 {
     margin: 5px 0 2px;
 }
 
+h4 {
+    font-weight: 400;
+    font-style: italic;
+    margin: 0pt 0pt 2pt;
+}
+
 p {
     height: auto;
     margin: auto;
@@ -160,6 +165,11 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.card:not(#publications) ul {
+    padding-left: 3em;
+    text-indent: -3em;
 }
 
 table {
