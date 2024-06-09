@@ -148,7 +148,8 @@ p {
     padding: 0 10px 5px;
 }
 
-a {
+a,
+summary {
     border-bottom: 1px dotted;
     color: inherit;
     background-color: inherit;
@@ -159,6 +160,37 @@ a:hover,
 a:focus {
     border-bottom: 1px dashed;
     outline: none;
+}
+
+details {
+    padding-left: 10px;
+    padding-bottom: 0.5ex;
+    margin-top: -3px;
+}
+
+details:not([open])>summary:before {
+    content: "+ ";
+    display: inline-block;
+    width: 1em;
+}
+
+details[open]>summary:before {
+    content: "- ";
+    display: inline-block;
+    width: 1em;
+}
+
+details[open]>summary:after {
+    content: ":";
+}
+
+
+summary {
+    display: inline;
+}
+
+summary::marker {
+    content: "";
 }
 
 ul {
